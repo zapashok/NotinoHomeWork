@@ -1,0 +1,177 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+button {
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #151515;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 13px 61px;
+    border: none;
+}
+
+
+
+.wrapper{
+    
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.header{
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+}
+.header-info{
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px 0px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.header-info a{
+    margin-right: 6%;
+    font-size: 16px;
+}
+.header-info p{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
+.header-info p:nth-child(1){
+    margin-right: 10%;
+}
+.header-info p:nth-child(2) {
+    margin-right: 5%;
+}
+
+
+.header-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 100px;
+    padding: 25px 0;
+}
+.header-title div:nth-child(1){
+    position: relative;
+}
+.header-title div:nth-child(1) i{
+    position: absolute;
+    top: 3px;
+    left: 6px;
+}
+.header-title div:nth-child(1) .header-search[type=text]:focus + i {
+    color: #D58508;
+}
+.header-search{
+    width: 200px;
+    height: 25px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 2px 2px 2px 30px;
+}
+.header-search:focus {
+    outline: none;
+    border-bottom: 1px solid #D58508;
+}
+
+.header-title div:nth-child(3){
+    display: flex;
+    gap: 20px;
+}
+.header-title div:nth-child(3) a img{
+    width: 25px;
+    height: 23px;
+}
+.header-title h1{
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+.header-title p{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.menu li:hover{
+    color: #D58508;
+}
+
+
+
+
+
+
+
+.header :nth-child(4){
+    max-height: 690px;
+    position: relative;
+}
+.header-img{
+    height: 100%;
+    width: 100%;
+}
+.main-btn{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding-left: 110px;
+    width: 214px;
+    height: 41px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+
+    border: none;
+    color: white;
+    padding: 7px 8px 7px 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 24px;
+}
+.header ul{
+    display: flex;
+    gap: 21px;
+    justify-content: center;
+
+}
